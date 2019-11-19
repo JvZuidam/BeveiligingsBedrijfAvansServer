@@ -13,7 +13,7 @@ const envVar = 'production';
 mongoose.Promise = global.Promise;
 
 if (envVar === 'testCloud' ||envVar === 'production') {
-    mongoose.connect('mongodb+srv://admin:MwQtYCZofQEsM7n6@beveiligingscluster0-74li9.mongodb.net/test?retryWrites=true&w=majority',
+    mongoose.connect('mongodb+srv://admin:MwQtYCZofQEsM7n6@beveiligingscluster0-74li9.mongodb.net/securitydb?retryWrites=true&w=majority',
         {useNewUrlParser: true})
         .then(() => {
             console.log("MongoDB Cloud connected")
